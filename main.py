@@ -29,8 +29,7 @@ while True:
             'Faculty': faculty
         }
 
-        filename = 'C:\pythonProject1/tasks' + '/'
-        with open(filename + name + '.json', 'w') as f:
+        with open(name + '.json', 'w') as f:
             stroka = json.dumps(new_list)
             print(stroka + '\n')
             f.write(stroka)
